@@ -4,7 +4,7 @@ class Coffee:
 
     def __init__(self, name):
         self.name = name
-        type(self.all.append(self))
+        type(self).all.append(self)
 
     @property
     def name(self):
@@ -41,7 +41,7 @@ class Customer:
 
     def __init__(self, name):
         self.name = name
-        type(self.all.append(self))
+        type(self).all.append(self)
 
     @property
     def name(self):
@@ -69,7 +69,7 @@ class Order:
         self.customer = customer
         self.coffee = coffee
         self.price = price
-        type(self.all.append(self))
+        type(self).all.append(self)
 
     @property
     def price(self):
